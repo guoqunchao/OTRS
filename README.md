@@ -17,7 +17,7 @@ Open-source Ticket Request System
 
 
 **3）环境**  
-``shell  
+```shell  
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# sestatus 
 SELinux status:                 disabled
-``
+```
