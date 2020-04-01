@@ -20,4 +20,21 @@ Open-source Ticket Request System
 ```shell  
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# sestatus 
 SELinux status:                 disabled
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# systemctl stop firewalld
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# systemctl disable firewalld
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# cat /etc/redhat-release 
+CentOS Linux release 7.5.1804 (Core)
+```
+
+**4）安装数据库**
+```shell
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# yum -y install mariadb-server
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# cat /etc/my.cnf.d/zotrs.cnf 
+[mysqld]
+max_allowed_packet   = 20M
+query_cache_size     = 32M
+innodb_log_file_size = 256M
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# systemctl start mariadb
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# netstat -lntp|egrep 3306
+tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      2032/mysqld
 ```
