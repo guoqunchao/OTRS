@@ -16,8 +16,8 @@ Open-source Ticket Request System
 4.纯Web操作界面，Web界面可以定制；很好的邮件系统集成。有问题单生成接口，能够将第三方网络系统监控的故障告警变成问题单，再自动分配到相关的维护组。  
 
 
-**3）环境**
-``shell
+**3）环境**  
+``shell  
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# sestatus 
 SELinux status:                 disabled
 ``
