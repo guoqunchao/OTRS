@@ -1,5 +1,5 @@
   
-## 安装OTRS工单管理系统 ##
+# 安装OTRS工单管理系统  
 Open-source Ticket Request System
 
 **1）OTRS简介**  
