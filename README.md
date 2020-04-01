@@ -38,3 +38,15 @@ innodb_log_file_size = 256M
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# netstat -lntp|egrep 3306
 tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      2032/mysqld
 ```
+
+**5)安装OTRS**
+```shell
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# wget https://ftp.otrs.org/pub/otrs/RPMS/rhel/7/otrs-6.0.27-02.noarch.rpm
+
+```
+
+
+
+
+
+
