@@ -49,9 +49,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/mariadb.service
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# systemctl enable httpd
 Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# /opt/otrs/bin/otrs.CheckModules.pl #检查缺失的perl模块
-
-#提示Not installed!的 使用提示的yum install "perl(Text::CSV_XS)"去安装
-[root@iZ8vb6tda6e8mxu62r0okfZ ~]# /opt/otrs/bin/otrs.CheckModules.pl &>check.txt #一键执行全部安装好。
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# /opt/otrs/bin/otrs.CheckModules.pl &>check.txt #提示Not installed!的 使用提示的yum install "perl(Text::CSV_XS)"去安装。
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# grep -o 'yum.*"' check.txt|sed 's#.*#& -y#g'|bash
 ```
 
