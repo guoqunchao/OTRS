@@ -44,7 +44,7 @@ tcp        0      0 0.0.0.0:3306            0.0.0.0:*               LISTEN      
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# wget https://ftp.otrs.org/pub/otrs/RPMS/rhel/7/otrs-6.0.27-02.noarch.rpm
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# yum localinstall otrs-6.0.27-02.noarch.rpm -y  #130多个依赖包，里面包含httpd和大量perl模块
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# systemctl start httpd.service
-
+[root@iZ8vb6tda6e8mxu62r0okfZ ~]# /opt/otrs/bin/otrs.CheckModules.pl #检查缺失的perl模块
 
 ```
 
