@@ -53,6 +53,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service t
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# grep -o 'yum.*"' check.txt|sed 's#.*#& -y#g'|bash
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# su - otrs -c "/opt/otrs/bin/otrs.Daemon.pl start"
 [root@iZ8vb6tda6e8mxu62r0okfZ ~]# su - otrs -c "/opt/otrs/bin/Cron.sh start"
+https://127.0.0.1/otrs/installer.pl
 ```
 
 
